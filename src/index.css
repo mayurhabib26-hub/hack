@@ -1,8 +1,9 @@
 @import "tailwindcss";
+@import "lenis/dist/lenis.css";
 
 @theme {
   --font-display: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-sans: "Manrope", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: "Space Grotesk", monospace;
 
   --color-ivory: #FFF9F0;
@@ -13,29 +14,69 @@
   --color-navy: #10243B;
   --color-soft-grey: #F2F0EB;
   --color-body-text: #455064;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --background: #FFF9F0;
+  --foreground: #10243B;
+  --primary: #FF6A00;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F2F0EB;
+  --secondary-foreground: #10243B;
+  --muted: #F2F0EB;
+  --muted-foreground: #455064;
+  --accent: #F2F0EB;
+  --accent-foreground: #FF6A00;
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  --border: #E8E5DD;
+  --input: #E5E1D8;
+  --ring: #FF6A00;
+}
+
+html, body, button, input, select, textarea {
+  font-family: var(--font-sans);
 }
 
 html {
-  font-size: 18px;
+  font-size: 14.5px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
 }
 
 @media (min-width: 640px) {
   html {
-    font-size: 18.5px;
+    font-size: 15px;
   }
 }
 
 @media (min-width: 1024px) {
   html {
-    font-size: 19px;
+    font-size: 15px;
   }
 }
 
 @media (min-width: 1440px) {
   html {
-    font-size: 19.5px;
+    font-size: 15.5px;
   }
 }
 

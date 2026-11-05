@@ -36,7 +36,7 @@ export default function Hero({ onOpenRegistration }: HeroProps) {
 
             {/* Oversized Display Typography */}
             <div className="space-y-1">
-              <h1 className="font-display font-extrabold text-6xl sm:text-8xl lg:text-9xl tracking-tighter text-[#10243B] leading-[0.9]">
+              <h1 className="font-display font-extrabold text-5xl sm:text-7xl lg:text-8xl tracking-tighter text-[#10243B] leading-[0.9]">
                 HACK<br />
                 <span className="text-[#FF6A00]">IGNITE.</span>
               </h1>
@@ -44,10 +44,10 @@ export default function Hero({ onOpenRegistration }: HeroProps) {
 
             {/* Tagline */}
             <div className="pt-2">
-              <p className="font-display font-extrabold text-xl sm:text-3xl text-[#10243B] tracking-tight uppercase">
+              <p className="font-display font-extrabold text-lg sm:text-2xl text-[#10243B] tracking-tight uppercase">
                 THINK. BUILD. INNOVATE. IMPACT.
               </p>
-              <p className="mt-3 text-base sm:text-xl text-[#455064] max-w-xl leading-relaxed font-medium">
+              <p className="mt-3 text-sm sm:text-lg text-[#455064] max-w-xl leading-relaxed font-medium">
                 {EVENT_DATA.theme}
               </p>
             </div>

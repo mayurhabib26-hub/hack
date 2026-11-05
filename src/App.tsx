@@ -15,9 +15,11 @@ import Coordinators from './components/Coordinators';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import RegistrationModal from './components/RegistrationModal';
+import { useSmoothScroll } from './hooks/useSmoothScroll';
 
 export default function App() {
   const [isRegistrationOpen, setIsRegistrationOpen] = useState(false);
+  useSmoothScroll(isRegistrationOpen);
 
   const handleOpenRegistration = () => {
     setIsRegistrationOpen(true);
